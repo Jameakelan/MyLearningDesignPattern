@@ -15,6 +15,7 @@ public class Originator {
         return state;
     }
 
+    /// Create Memento
     public Memento saveStateToMemento() {
         return new Memento(state);
     }
@@ -22,5 +23,9 @@ public class Originator {
     public void getStateFromMemento(Memento state) {
         this.state = state.getState();
 
+    }
+
+    public void restore(Memento state) {
+        this.state = state.getState();
     }
 }

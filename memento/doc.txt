@@ -1,3 +1,19 @@
+Memento Design Pattern which is used to restore the state of an object to a previous state.
+
+Originator: 
+    - Originator object ทำหน้าที่สร้าง memento object จากนั้นเก็บ state ไว้ที่ตัวเอง (get, set ค่าของ Memento objects)
+    ex. private String state, getState, setState  
+
+    - Originator รู้วิธีการ save หรือ restore ตัวเอง
+
+CareTaker: 
+    - object ที่รู้ว่า ทำไมหรือเมื่อไหร่ที่ Originator ต้องการที่จะ save หรือ restore ตัวเอง
+    - maintains ประวัติของ Memento object ที่ได้สร้างมาแล้ว
+    
+Memento: 
+    - บรรจุการจัดเก็บ state [Memento(String state)] และ ความสามารถในการดึงข้อมูล [getState()]
+    - object จะมีการเก็บ state ภายในของ Originator ไว้และอนุญาติให้มัน restore ตัวเอง
 Ref:
 https://www.tutorialspoint.com/design_pattern/memento_pattern.htm
 https://www.saladpuk.com/software-design/designpatterns/behavioral-patterns/memento
+https://dzone.com/articles/memento-design-pattern-in-java

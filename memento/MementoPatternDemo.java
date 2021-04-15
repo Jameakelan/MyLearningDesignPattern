@@ -21,11 +21,9 @@ public class MementoPatternDemo {
         originator.setState("State #4");
         System.out.println("Current State: " + originator.getState());
 
-        originator.getStateFromMemento(careTaker.get(0));
-        System.out.println("First State: " + originator.getState());
-
-        originator.getStateFromMemento(careTaker.get(1));
-        System.out.println("Second State: " + originator.getState());
+        // Restore to State #1;
+        originator.restore(careTaker.get(0));
+        System.out.println("Current State After Restoring: " + originator.getState());
 
     }
 }
