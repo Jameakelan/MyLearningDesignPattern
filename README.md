@@ -1,2 +1,1 @@
-# MyLearningDesignPattern
-java programming
+Ref: https://www.tutorialspoint.com/design_pattern/
